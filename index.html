@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Personal Portfolio</title>
+    <!-- icon-portfolio -->
+    <link rel="shortcut icon" href="assets/logo_goblin.png" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- navbar -->
+     <nav class="nav">
+        <ul class="nav-list">
+            <li class="active">
+                <a href="#home"></a><i class='bx bx-home' ></i> 
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#about"></a><i class='bx bx-user'></i> 
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="#resume"></a><i class='bx bx-detail' ></i> 
+                <span class="tooltip">Resume</span>
+            </li>
+            <li>
+                <a href="#portfolio"></a><i class='bx bx-briefcase' ></i> 
+                <span class="tooltip">Portfolio</span>
+            </li>
+            <li>
+                <a href="#contact"></a><i class='bx bx-envelope' ></i> 
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+     </nav>
+
+     <div class="container">
+        <div class="box">
+            <!-- home section -->
+            <section class="section home active">
+                <div class="home-info">
+                    <h3>Hello I'm</h3>
+                    <h1>Rizky Maulidan</h1>
+                    <h3>Frontend Developer</h3>
+                    <p class="desc">
+                        I am a passionate student in technology and digital innovation. 
+                        Skilled in HTML, CSS, JavaScript, and UI/UX design, with strong problem-solving and critical thinking abilities. 
+                        I am eager to grow and contribute to the tech industry.
+                    </p>
+                    <div class="btn-sci">
+                        <a href="CV.pdf" class="btn" download>Download CV</a>
+                        <div class="sci">
+                            <a href="https://www.facebook.com/maulidan.zidan.50">
+                                <i class='bx bxl-facebook'></i>
+                                <span class="tooltip">Facebook</span>
+                            </a>
+                            <a href="https://github.com/MRizkyMaulidan16">
+                                <i class='bx bxl-github'></i>
+                                <span class="tooltip">Github</span>
+                            </a>
+                            <a href="https://www.instagram.com/zidan_pratama1454">
+                                <i class='bx bxl-instagram'></i>
+                                <span class="tooltip">Instagram</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-rizky-maulidan-pratama-555865316">
+                                <i class='bx bxl-linkedin'></i>
+                                <span class="tooltip">LinkedIn</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@zidanmaulidan16">
+                                <i class='bx bxl-tiktok'></i>
+                                <span class="tooltip">Tiktok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-wrapper">
+                    <div class="img-box home-img">
+                        <img src="assets/ana.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+            <!-- about section -->
+             <section class="section about" id="about">
+                <div class="img-wrapper">
+                    <div class="img-box about-img">
+                        <img src="assets/ana.png" alt="">
+                    </div>
+                </div>
+
+                <div class="about-info">
+                    <h2 class="title">About Me</h2>
+                    <h3>Frontend Developer</h3>
+                    <p class="desc">
+                        I am a student with a strong passion for technology and digital innovation. 
+                    	With a keen eagerness to learn, I continuously develop my skills in analysis, 
+                    	problem-solving, and creative solution development. I am detail-oriented, 
+                    	possess critical thinking abilities, and can work both independently and 
+                    	collaboratively in a team. Focused on growth and innovation, I always strive to bring new,
+                    	impactful ideas to the world of technology.
+                    </p>
+                    <!-- <a href="#" class="btn">View More</a> -->
+                    <button class="btn" onclick="openModal()">View More</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>More About Me</h2>
+                            <p>"Hello! I am a fresh graduate Frontend Developer who enjoys building interactive web 
+                                applications. I have experience in HTML, CSS, and JavaScript. I am also actively 
+                                involved in developing technology-based educational projects. As a mahasantri, 
+                                I can work while continuing to learn and grow."</p>
+                        </div>
+                    </div>
+
+                </div>
+             </section>
+            <!-- resume (experience, skills, education) section -->
+             <section class="section resume">
+                <h2 class="title">Resume</h2>
+                <div class="tab-box">
+                    <div class="tab-list resume-list active">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Education</h3>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <div class="tab-grid resume-box experience active">
+                        <div class="tab-item resume-item">
+                            <h4>2025 - Present</h4>
+                            <h4>Head of Mosque Prosperity Council (DKM)</h4>
+                            <h4>PeTIK II Jombang</h4>
+                            <p>I managed and coordinated religious activities in the mosque, 
+                                including study sessions, congregational prayers, and social programs. 
+                                Additionally, I led a team in planning and executing various Islamic events 
+                                aimed at enhancing the spiritual growth of students. I also maintained communication 
+                                with students and teachers to improve mosque management and facilities,
+                                ensuring a well-organized 
+                                and supportive religious environment.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024 - 2025</h4>
+                            <h4>Head of Diniyah Class</h4>
+                            <h4>PeTIK II Jombang</h4>
+                            <p>I coordinated Diniyah (Islamic studies) learning activities in class and ensured a 
+                                conducive learning environment. I also assisted fellow students in understanding 
+                                religious subjects and served as a bridge between students and teachers. 
+                                Additionally, I conveyed students’ academic aspirations and needs to educators 
+                                to enhance the quality of Diniyah education.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2023 - 2024</h4>
+                            <h4>Livestock Manager (Goat Farm)</h4>
+                            <h4>Sahil Farm, Bogor</h4>
+                            <p>I managed livestock care, health, and the well-being of goats by ensuring proper 
+                                feeding schedules, maintaining the cleanliness of pens, and monitoring animal health.
+                                Additionally, I assisted in livestock management for both economic and social purposes, 
+                                including the preparation of goats for Qurban.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2022 - July</h4>
+                            <h4>Head of Qurban Committee</h4>
+                            <h4>Sahil Bogor</h4>
+                            <p>I led the planning and execution of the Qurban event, coordinating the team and managing 
+                                the budget to ensure smooth operations. I also oversaw the fair and structured distribution 
+                                of Qurban meat, making sure it reached the intended recipients efficiently. 
+                                Additionally, I communicated with donors and participants to increase engagement 
+                                and support for the event.</p>
+                        </div> 
+                        <div class="tab-item resume-item">
+                            <h4>2020 - 2022</h4>
+                            <h4>Company Commander (DANKI)</h4>
+                            <h4>SMK T-1 Yaspida, PASGARRDA</h4>
+                            <p>I led members in maintaining discipline and order within the school environment while 
+                                training them in leadership skills and organizational responsibilities. 
+                                Additionally, I managed security strategies and coordinated event organization to ensure
+                                a safe and well-structured school atmosphere.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2022</h4>
+                            <h4>Internship at Poultry Farm</h4>
+                            <h4>PT Japfa Comfeed</h4>
+                            <p>I learned and applied professional poultry farm management techniques while supervising feed 
+                                distribution, sanitation, and poultry health to maintain farm productivity. 
+                                Additionally, I documented livestock development and reported observations to supervisors 
+                                to ensure effective farm operations.</p>
+                        </div>                  
+                    </div>
+
+                    <div class="tab-grid resume-box skills">
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-html5'></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-css3' ></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-javascript' ></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-c-plus-plus' ></i>
+                            <p>C++</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-php' ></i>
+                            <p>PHP</p>
+                        </div>
+                    
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-figma' ></i>
+                            <p>Figma</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-bootstrap' ></i>
+                            <p>Bootstrap</p>
+                        </div>
+                        
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-postgresql' ></i>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bxs-data'></i>
+                            <p>Database</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bxl-visual-studio'></i>
+                            <p>Visual Studio</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="fa-brands fa-laravel"></i>
+                            <p>Laravel</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class='bx bx-video-recording'></i>
+                            <p>Video Editing</p>
+                        </div>
+                            
+                    </div>
+
+                    <div class="tab-grid resume-box education">
+                        <div class="tab-item resume-item">
+                            <h4>2024 - Present</h4>
+                            <h4>PeTIK II, Jombang</h4>
+                            <h4>Islamic Boarding School</h4>
+                            <p>I am currently studying at PeTIK II Islamic Boarding School, 
+                                where I focus on software development, particularly in web development. 
+                                In addition to technical skills, I also engage in religious studies to 
+                                strengthen my understanding of Islamic teachings.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024 - December</h4>
+                            <h4>Web Programming</h4>
+                            <h4>Online Course</h4>
+                            <p>Completed an online Web Programming course that covered fundamental and 
+                                advanced web development concepts, including HTML, CSS, JavaScript, 
+                                and responsive design. Gained hands-on experience in building interactive 
+                                websites and learned best practices for front-end and back-end development.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2022 - 2024</h4>
+                            <h4>Sahabat Ilmu (SAHIL), Bogor</h4>
+                            <h4>Islamic Boarding School</h4>
+                            <p>At Sahabat Ilmu (SAHIL) Islamic Boarding School, I deepened my knowledge of 
+                                Islamic studies, particularly in the field of da'wah. This experience 
+                                enhanced my ability to analyze and solve problems based on religious 
+                                principles while fostering leadership and community engagement.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024</h4>
+                            <h4>SMK T-1 YASPIDA, Sukabumi</h4>
+                            <h4>Vocational High School</h4>
+                            <p>Graduated with a GPA of 3.16/4 and a final score of 80.1/100, majoring in 
+                                Agrobusiness Poultry Farming. During my studies, I gained in-depth knowledge 
+                                of poultry farm management and business strategies in the livestock industry.</p>
+                        </div>                
+                    </div>
+                </div>
+             </section>
+              
+            <!-- portfolio (work, services) section -->
+             <section class="section portfolio">
+                <h2 class="title">Portfolio</h2>
+                <div class="tab-box">
+                    <div class="tab-list portfolio-list active">
+                        <h3>Work</h3>
+                    </div>
+                    <div class="tab-list portfolio-list">
+                        <h3>Services</h3>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <div class="tab-grid portfolio-box work active">
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="assets/1.png" alt="Form Login Register" >
+                            </div>
+                            <div class="work-info">
+                                <h4>Form Login Register</h4>
+                                <p>A futuristic neon-themed login and registration UI with a gaming-inspired background.
+                                </p>
+                                <div class="tech-used">
+                                    <p>HTML, CSS3, JavaScript</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="https://mrizkymaulidan16.github.io/FormLogin-Register/">
+                                        <i class='bx bx-arrow-back'></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="https://github.com/MRizkyMaulidan16/FormLogin-Register.git">
+                                        <i class='bx bxl-github' ></i>
+                                        <span class="tooltip">Github Repository</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="assets/2.png" alt="Bootstrap Template">
+                            </div>
+                            <div class="work-info">
+                                <h4>Personal Website</h4>
+                                <p>A portfolio page for Muhammad Rizky Maulidan Pratama, highlighting his role as a Da'i 
+                                    (Islamic preacher) with a professional group photo and social media links.
+                                </p>
+                                <div class="tech-used">
+                                    <p>HTML, CSS3, JavaScript, Bootstrap</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="https://mrizkymaulidan16.github.io/my_profile/">
+                                        <i class='bx bx-arrow-back'></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="https://github.com/MRizkyMaulidan16/my_profile.git">
+                                        <i class='bx bxl-github' ></i>
+                                        <span class="tooltip">Github Repository</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="assets/3.png" alt="Profile Website">
+                            </div>
+                            <div class="work-info">
+                                <h4>Profile Website</h4>
+                                <p>A dark-themed webpage about Bogor City, featuring its history, geography, and tourism. 
+                                    It includes an image of the Bogor Palace, the city emblem, and historical facts along with 
+                                    general information such as area size, local language, and phone code.
+                                </p>
+                                <div class="tech-used">
+                                    <p>HTML & CSS3</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="https://mrizkymaulidan16.github.io/ProfileBogor/">
+                                        <i class='bx bx-arrow-back'></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="https://github.com/MRizkyMaulidan16/ProfileBogor.git">
+                                        <i class='bx bxl-github' ></i>
+                                        <span class="tooltip">Github Repository</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="assets/4.png" alt="Personal Website">
+                            </div>
+                            <div class="work-info">
+                                <h4>Personal Website</h4>
+                                <p>A dark-themed portfolio introducing Muhammad Rizky Maulidan Pratama,
+                                    a Hafidzul Qur'an and programming student.
+                                </p>
+                                <div class="tech-used">
+                                    <p>HTML, CSS3, JavaScript</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="https://mrizkymaulidan16.github.io/Tugas_Akhir_web_design/">
+                                        <i class='bx bx-arrow-back'></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="https://github.com/MRizkyMaulidan16/Tugas_Akhir_web_design.git">
+                                        <i class='bx bxl-github' ></i>
+                                        <span class="tooltip">Github Repository</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="assets/5.png" alt="Navbar">
+                            </div>
+                            <div class="work-info">
+                                <h4>Navbar</h4>
+                                <p>A futuristic navbar with Home, Profile, Messages (green highlight), 
+                                    Video, and Settings icons, centered against an aesthetic space-themed background.
+                                </p>
+                                <div class="tech-used">
+                                    <p>HTML, CSS3, JavaScript</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="https://mrizkymaulidan16.github.io/NavbarNeonGreen">
+                                        <i class='bx bx-arrow-back'></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="https://github.com/MRizkyMaulidan16/NavbarNeonGreen.git">
+                                        <i class='bx bxl-github' ></i>
+                                        <span class="tooltip">Github Repository</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="assets/6.png" alt="Card Template">
+                            </div>
+                            <div class="work-info">
+                                <h4>Card Template</h4>
+                                <p>A portfolio page for Muhammad Rizky Maulidan Pratama, a developer, 
+                                    featuring a vibrant design, profile picture, intro, social media links, 
+                                    and a "Hire me!" button.
+                                </p>
+                                <div class="tech-used">
+                                    <p>HTML, CSS3, Bootstrap</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="https://mrizkymaulidan16.github.io/Card/">
+                                        <i class='bx bx-arrow-back'></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="https://github.com/MRizkyMaulidan16/Card.git">
+                                        <i class='bx bxl-github' ></i>
+                                        <span class="tooltip">Github Repository</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-grid portfolio-box services">
+                        <div class="tab-item portfolio-item">
+                            <div class="portfolio-icon service-icon">
+                                <i class='bx bx-code-alt icon'></i>
+                                <!-- <a href="#about"><i class="bx bx-arrow-back"></i></a> -->
+                            </div>
+                            <h4>Web Development</h4>
+                            <p>We build fast, secure, and responsive websites tailored to your business needs.
+                            </p>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="portfolio-icon service-icon">
+                                <i class='bx bx-paint icon'></i>
+                                <!-- <a href="#about"><i class="bx bx-arrow-back"></i></a> -->
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>Attractive and user-friendly designs for a better user experience.
+                            </p>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="portfolio-icon service-icon">
+                                <i class='bx bx-video-recording icon'></i>
+                                <!-- <a href="#about"><i class="bx bx-arrow-back"></i></a> -->
+                            </div>
+                            <h4>Video Editing</h4>
+                            <p>Create captivating videos for your projects.
+                            </p>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="portfolio-icon service-icon">
+                                <i class='bx bx-camera icon'></i>
+                                <!-- <a href="#about"><i class="bx bx-arrow-back"></i></a> -->
+                            </div>
+                            <h4>Photography</h4>
+                            <p>Create stunning photos for your projects.
+                            </p>
+                        </div>   
+                    </div>
+                </div>
+             </section>
+            <!-- contact section -->
+             <section class="section contact active">
+                <h2 class="title">Contact</h2>
+                <div class="contact-wrapper">
+                    <form action="https://formspree.io/f/xvgkoony" class="contact-form" method="POST">
+                        <h3>Let's Work Together!</h3>
+                        <div class="field-box">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="phone" placeholder="Phone Number" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <textarea name="message" id="" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="contact-btn">
+                            <button type="submit" class="btn" >Send Message</button>
+                        </div>
+                    </form>
+                </div>
+             </section>
+
+            <!-- footer section -->
+        </div>
+     </div>
+   
+    
+    <!-- javaScript file -->
+    <script src="assets/main.js"></script>
+</body>
+</html>
